@@ -14,96 +14,92 @@
         body {
             font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
             background: linear-gradient(135deg, #0f2027, #2c5364);
-            color: white;
-            margin: 0; padding: 20px; display: flex; justify-content: center;
+            color: white; margin: 0; padding: 20px; display: flex; justify-content: center;
         }
 
         .container {
-            max-width: 900px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 35px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            max-width: 900px; background: var(--glass-bg); backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 35px;
+            padding: 40px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
         }
 
-        h1 { color: var(--gold-accent); font-size: 32pt; text-align: center; margin-bottom: 30px; }
+        h1 { color: var(--gold-accent); font-size: 30pt; text-align: center; margin-bottom: 30px; }
 
         .report-section {
-            background: rgba(255, 255, 255, 0.07);
-            border-radius: 20px;
-            padding: 25px;
-            margin-bottom: 25px;
-            font-size: 20pt;
-            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.07); border-radius: 20px;
+            padding: 25px; margin-bottom: 25px; font-size: 19pt; line-height: 1.6;
             border-left: 8px solid var(--gold-accent);
         }
 
         .highlight { color: #FFD700; font-weight: bold; }
         
         .sub-text {
-            font-size: 17pt;
-            color: #E0E0E0;
-            display: block;
-            margin-top: 10px;
-            line-height: 1.4;
-            padding-left: 10px;
-            border-left: 2px solid rgba(255, 255, 255, 0.3);
+            font-size: 16pt; color: #E0E0E0; display: block; margin-top: 10px;
+            line-height: 1.4; padding-left: 10px; border-left: 2px solid rgba(255, 255, 255, 0.3);
         }
 
         .subsidy-box {
-            background: rgba(212, 175, 55, 0.15);
-            border: 1px solid var(--gold-accent);
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 15px;
-            font-size: 18pt;
+            background: rgba(212, 175, 55, 0.15); border: 1px solid var(--gold-accent);
+            border-radius: 15px; padding: 20px; margin-top: 15px; font-size: 18pt;
         }
 
-        button {
-            display: block; width: 100%; background: var(--gold-accent);
-            color: var(--deep-blue); border: none; padding: 20px;
-            font-size: 22pt; border-radius: 50px; cursor: pointer;
-            font-weight: bold; margin-top: 30px;
+        /* 電子名片樣式 */
+        .biz-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border: 2px solid var(--gold-accent); border-radius: 25px;
+            padding: 30px; margin-top: 40px; text-align: center;
+        }
+        .biz-card .title { font-size: 16pt; color: #CCC; letter-spacing: 2px; }
+        .biz-card .name { font-size: 28pt; color: var(--gold-accent); font-weight: bold; margin: 10px 0; }
+        .biz-card .company { font-size: 18pt; margin-bottom: 20px; }
+        
+        .call-btn {
+            display: inline-block; width: 100%; background: var(--gold-accent);
+            color: var(--deep-blue); text-decoration: none; padding: 18px;
+            font-size: 22pt; border-radius: 50px; font-weight: bold;
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>首席經理 財經週報</h1>
+        <h1>財經週報 1150321</h1>
 
         <div class="report-section">
             1️⃣ <span class="highlight">海峽運量：</span>3月下滑 24.8%
-            <span class="sub-text">💡 <b>經理點評：</b>運量下滑代表全球供應鏈正再度緊縮，進口成本將大幅上升，這通常是通膨再次升溫的前兆，建議減少現金持有。</span>
+            <span class="sub-text">💡 <b>經理點評：</b>運量下滑代表供應鏈趨緊，進口成本上升，通膨壓力將隨之而來。</span>
         </div>
 
         <div class="report-section">
             2️⃣ <span class="highlight">油價破百：</span>飆破 $110 美元
-            <span class="sub-text">💡 <b>經理點評：</b>高油價將帶動電費與運輸成本上漲。這會直接稀釋實質薪資收入，您的資產需要具備「抗通膨」屬性才能守住價值。</span>
+            <span class="sub-text">💡 <b>經理點評：</b>高油價帶動成本漲價，建議資產配置需增加具「抗通膨」屬性的標的。</span>
         </div>
 
         <div class="report-section">
             3️⃣ <span class="highlight">稅務新制：</span>遺贈稅「受贈人負稅」
-            <span class="sub-text">💡 <b>經理點評：</b>法律落實「誰拿財產誰繳稅」。若子女名下無現款，恐面臨「有遺產沒錢領」的困境，建議及早規劃「預留稅源」專案。</span>
+            <span class="sub-text">💡 <b>經理點評：</b>法律落實誰領誰繳。建議及早進行「預留稅源」規劃，避免資金缺口。</span>
         </div>
 
         <div class="report-section">
             4️⃣ <span class="highlight">資產配置：</span>50/30/20 黃金比例
-            <span class="sub-text">💡 <b>經理點評：</b>建議 50% 配置在市值型資產(成長)、30% 高股息(現金流)，剩餘 20% 務必放在高宣告利率保單，鎖定長期穩定的防禦底倉。</span>
+            <span class="sub-text">💡 <b>經理點評：</b>50% 成長型資產、30% 現金流資產、20% 防禦型利變保單。</span>
         </div>
 
         <div class="report-section">
-            5️⃣ <span class="highlight">2026 政府補助精選：</span>
+            5️⃣ <span class="highlight">政府補助精選：</span>
             <div class="subsidy-box">
                 👉 <b>一級能效節能：</b>最高領 $3,000 元。<br>
-                👉 <b>長照輔具補貼：</b>最高申請 $40,000 元。<br>
-                👉 <b>青年貸款補貼：</b>每月最高領 $8,000 元。
+                👉 <b>長照輔助補貼：</b>最高申請 $40,000 元。
             </div>
         </div>
 
-        <button onclick="alert('王金菊首席經理已收到您的諮詢，我將盡快與您聯繫！')">諮詢金菊首席經理</button>
+        <div class="biz-card">
+            <div class="title">永達保險經紀人 首席經理</div>
+            <div class="name">王 金 菊</div>
+            <div class="company">專業服務．資產守護</div>
+            <a href="tel:0931596227" class="call-btn">📞 撥號諮詢：0931-596-227</a>
+        </div>
     </div>
 
 </body>
